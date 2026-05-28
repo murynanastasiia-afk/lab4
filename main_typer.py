@@ -33,7 +33,7 @@ def complete(number: int):
 @typer_app.command()
 def results():
     for t in controller.get_archived_todos():
-        print(f"📁 {t.strip()}")
+        print(f" {t.strip()}")
 
 @typer_app.command()
 def print_pdf():
