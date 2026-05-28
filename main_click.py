@@ -38,7 +38,7 @@ def click_complete(number):
 @click_cli.command("results")
 def click_results():
     for t in controller.get_archived_todos():
-        print(f"📁 {t.strip()}")
+        print(f"{t.strip()}")
     print("Успішно виконано!")
 
 @click_cli.command("print")
