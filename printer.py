@@ -54,7 +54,7 @@ class TaskPrinter:
 
         pdf.set_font(font_name, '', 16)
         pdf.set_text_color(0, 0, 0)
-        pdf.cell(w=0, h=10, text="📌 Поточні активні завдання:", new_x="LMARGIN", new_y="NEXT")
+        pdf.cell(w=0, h=10, text=" Поточні активні завдання:", new_x="LMARGIN", new_y="NEXT")
         
         pdf.set_font(font_name, '', 12)
         pdf.set_fill_color(230, 240, 250)
@@ -83,7 +83,7 @@ class TaskPrinter:
         pdf.ln(10)
 
         pdf.set_font(font_name, '', 16)
-        pdf.cell(w=0, h=10, text="📁 Архів виконаних завдань:", new_x="LMARGIN", new_y="NEXT")
+        pdf.cell(w=0, h=10, text=" Архів виконаних завдань:", new_x="LMARGIN", new_y="NEXT")
         
         pdf.set_font(font_name, '', 12)
         for idx, arch_task in enumerate(self.archived_tasks):
