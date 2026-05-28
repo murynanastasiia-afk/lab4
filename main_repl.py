@@ -6,7 +6,7 @@ COMMANDS = {
     "show": lambda args: [print(f"{i+1}. {t.strip()}") for i, t in enumerate(controller.get_all_todos())],
     "edit": lambda args: print("Для редагування використовуйте WEB."),
     "complate": lambda args: controller.finish_todo(int(args)-1) if args and args.isdigit() else print("Вкажіть номер"),
-    "results": lambda args: [print(f"📁 {t.strip()}") for t in controller.get_archived_todos()],
+    "results": lambda args: [print(f" {t.strip()}") for t in controller.get_archived_todos()],
     "print": lambda args: [controller.generate_pdf_report(), print("Звіт успішно збережено в папку reports!")],
     "exit": lambda args: False
 }
